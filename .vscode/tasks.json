@@ -1,0 +1,68 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "gittask",
+            "type": "shell",
+            "command": "git add . ; git commit -m 'auto update with git task' ; git push ;",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "close": true,
+            },
+        },
+        /*         {
+            "label": "rundevtask",
+            "type": "npm",
+            "script": "dev",
+            "group": "build",
+            "isBackground": false,
+            "presentation": {
+                "panel": "shared",
+                "close": true
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "shelltask",
+            "type": "shell",
+            "command": "cd orangutantech; bash",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "rundevtask and Open another shell on close",
+            "group": "build",
+            "dependsOn": [
+                "rundevtask",
+                "shelltask"
+            ],
+            "dependsOrder": "sequence",
+            "presentation": {
+                "panel": "shared",
+                "close": true
+            },
+        } */
+        // { 
+        //     //doesn't work
+        //     "label": "Run Dev and Close",
+        //     "type": "npm",
+        //     "script": "dev",
+        //     "problemMatcher": [],
+        //     "presentation": {
+        //         "reveal": "always",
+        //         "panel": "dedicated",
+        //         "close": true
+        //     },
+        //     "runOptions": {
+        //         "runOn": "folderOpen" // Optional: run automatically on folder open
+        //     }
+        // }
+    ]
+}

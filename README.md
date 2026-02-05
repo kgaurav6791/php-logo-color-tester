@@ -87,7 +87,7 @@ Open:
 http://localhost:8000/
 ```
 
-Usage
+## Usage
 
 Put your logo at uploads/logo.jpeg
 
@@ -111,7 +111,7 @@ Check the contrast KPIs
 
 Click Download PNG to export
 
-How recoloring works (quick explanation)
+## How recoloring works (quick explanation)
 
 The script:
 
@@ -133,7 +133,7 @@ High contrast
 
 Clean edges
 
-Notes / limitations
+## Notes / limitations
 
 The logo path is fixed to: ./uploads/logo.jpeg
 
