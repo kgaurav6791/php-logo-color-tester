@@ -47,20 +47,6 @@ If the logo is missing, the UI will show:
 
 ---
 
-## Project structure
-
-Recommended repo layout:
-
-logo-color-tester/
-├─ index.html
-├─ README.md
-├─ uploads/
-│ └─ logo.jpeg # required (fixed path + name)
-└─ .github/
-└─ workflows/
-├─ required-files.yml # optional: CI check for uploads/logo.jpeg
-└─ pages.yml # optional: deploy to GitHub Pages
-
 > If you rename `index.html` to `index.php`, it will still work (the current version is plain HTML/JS).  
 > Just keep the **relative path** `./uploads/logo.jpeg` working.
 
@@ -79,22 +65,27 @@ logo-color-tester/
 
 #### Python
 
-```bash
+```
 python -m http.server 8000
-
+```
 
 Open:
 
+```
 http://localhost:8000/
+```
 
 Node (http-server)
-npx http-server -p 8000
 
+```
+npx http-server -p 8000
+```
 
 Open:
 
+```
 http://localhost:8000/
-
+```
 
 Usage
 
@@ -120,7 +111,6 @@ Check the contrast KPIs
 
 Click Download PNG to export
 
-
 How recoloring works (quick explanation)
 
 The script:
@@ -143,7 +133,6 @@ High contrast
 
 Clean edges
 
-
 Notes / limitations
 
 The logo path is fixed to: ./uploads/logo.jpeg
@@ -151,6 +140,3 @@ The logo path is fixed to: ./uploads/logo.jpeg
 Export is a simple horizontal composition: icon + text (no nav/search included)
 
 Threshold UI is currently removed (logic defaults to a safe value)
-
-
-```
