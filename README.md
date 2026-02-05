@@ -8,19 +8,19 @@ No frameworks, no npm, no bundlers, no php. Just open the page in a browser.
 
 ## What it does
 
-- ✅ Loads a **fixed logo file** from `./uploads/logo.jpeg`
-- ✅ Converts the logo into a **transparent “ink” mask** and recolors it with an **Icon color** picker
-- ✅ Lets you edit the **site title text**, set **text color**, and adjust:
-  - Font family
-  - Font style
-  - Font size
-  - Font weight
-- ✅ Lets you set **header background** color
-- ✅ Shows quick **contrast ratio checks**:
-  - Icon vs background (target: **≥ 3.0**)
-  - Text vs background (target: **≥ 4.5**)
-- ✅ Generates **color suggestions** (click swatches to apply text color)
-- ✅ Exports a **PNG** using the current icon + text settings
+- Loads a **fixed logo file** from `./uploads/logo.jpeg`
+- Converts the logo into a **transparent “ink” mask** and recolors it with an **Icon color** picker
+- Lets you edit the **site title text**, set **text color**, and adjust:
+- Font family
+- Font style
+- Font size
+- Font weight
+- Lets you set **header background** color
+- Shows quick **contrast ratio checks**:
+- Icon vs background (target: **≥ 3.0**)
+- Text vs background (target: **≥ 4.5**)
+- Generates **color suggestions** (click swatches to apply text color)
+- Exports a **PNG** using the current icon + text settings
 
 ---
 
@@ -32,18 +32,15 @@ You **must** place your logo at:
 
 uploads/logo.jpeg
 
-✅ Folder name must be exactly: `uploads`  
-✅ File name must be exactly: `logo.jpeg`  
-✅ Relative to the HTML file location
+Folder name must be exactly: `uploads`  
+ File name must be exactly: `logo.jpeg`  
+ Relative to the HTML file location
 
 If the logo is missing, the UI will show:
 
 > `Missing: uploads/logo.jpeg`
 
 …and **Download PNG** will be disabled.
-
-> Tip: If you’re publishing this repo publicly, you may not want to commit your real logo.  
-> You can commit a **placeholder** `uploads/logo.jpeg` and tell users to replace it locally.
 
 ---
 
@@ -138,4 +135,3 @@ The logo path is fixed to: ./uploads/logo.jpeg
 
 Export is a simple horizontal composition: icon + text (no nav/search included)
 
-Threshold UI is currently removed (logic defaults to a safe value)
