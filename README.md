@@ -2,7 +2,7 @@
 
 A tiny, zero-build, single-page tool to **recolor a logo icon** and **tweak header text styling** in real time—then **export a PNG** for quick mockups.
 
-No frameworks, no npm, no bundlers. Just open the page in a browser.
+No frameworks, no npm, no bundlers, no php. Just open the page in a browser.
 
 ---
 
@@ -47,7 +47,6 @@ If the logo is missing, the UI will show:
 
 ---
 
-> If you rename `index.html` to `index.php`, it will still work (the current version is plain HTML/JS).  
 > Just keep the **relative path** `./uploads/logo.jpeg` working.
 
 ---
